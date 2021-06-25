@@ -1,0 +1,27 @@
+{
+  "name": "safari-video-streaming",
+  "version": "1.0.0",
+  "description": "Safari video streaming example",
+  "main": "src/index.js",
+  "author": "Tomer <tomer@corevo.io>",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/corevo/safari-video-streaming",
+    "type": "git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "fastify": "^3.18.0",
+    "fastify-static": "^4.2.2",
+    "memoizee": "^0.4.15"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1"
+  }
+}

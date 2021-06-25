@@ -1,0 +1,30 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": ["plugin:node/recommended"],
+  "plugins": ["prettier", "node"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-warning-comments": ["warn", {"terms": ["fixme", "removeme", "xxx", "@@@"], "location": "anywhere"}],
+    "no-process-exit": "off",
+    "no-const-assign": "error",
+    "no-this-before-super": "error",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": [
+      "error",
+      {"varsIgnorePattern": "^_", "args": "all", "argsIgnorePattern": "^_"}
+    ],
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "no-debugger": "error",
+    "node/exports-style": ["error", "module.exports"]
+  }
+}
